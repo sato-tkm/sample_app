@@ -1329,3 +1329,203 @@ Started GET "/attachments/b3b32c2e4f8c8324b1031ba37dd1150665c3cd39/store/fill/30
 Cannot render console from 180.52.200.25! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Refile::App: [2020-12-09 12:07:33 +0000] GET "/b3b32c2e4f8c8324b1031ba37dd1150665c3cd39/store/fill/300/300/8af70e166de076eca3e98ff46f52d69ddea1bed064d88ba479fe74ceb291/image.jpeg" 200 58.4ms
 
+Started GET "/todolists/new" for 114.157.162.58 at 2020-12-10 10:21:40 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 278ms (Views: 261.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/todolists/new" for 114.157.162.58 at 2020-12-10 10:21:53 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todolists/new" for 114.157.162.58 at 2020-12-10 10:25:16 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todolists/new" for 114.157.162.58 at 2020-12-10 10:25:25 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todolists/1" for 114.157.162.58 at 2020-12-10 10:25:32 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:20
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (202.7ms)
+Completed 500 Internal Server Error in 223ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `plist' for #<#<Class:0x00007fd8d4ae50d8>:0x00007fd8d60133b0>
+Did you mean?  @list):
+    6: <%= attachment_image_tag @list, :image, :fill, 300, 300, format: 'jpeg' %>
+    7: 
+    8: <%= link_to "編集", edit_todolist_path(@list.id) %>
+    9: <%= link_to "削除", destroy_todolist_path(plist.id), method: :delete, "date-confirm" => "本当に削除しますか" %>
+  
+app/views/todolists/show.html.erb:9:in `_app_views_todolists_show_html_erb__3865782735363283848_70284640034300'
+Started GET "/todolists/1" for 114.157.162.58 at 2020-12-10 10:26:57 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:20
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 227ms (Views: 209.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/todolists/1" for 114.157.162.58 at 2020-12-10 10:26:59 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (1.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:20
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/todolists/1/edit" for 114.157.162.58 at 2020-12-10 10:27:20 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:23
+  Rendering todolists/edit.html.erb within layouts/application
+  Rendered todolists/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/todolists/1" for 114.157.162.58 at 2020-12-10 10:27:25 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AWEMMt3166dzdkRPavRlX/B9athvmVo1yaz7IlagURfUbWqeZQpiat+DpMR+Ny/hCCl1S4GUmi/+HuoRJEwWPw==", "list"=>{"title"=>"railsの勉強", "body"=>"投稿機能を作る\r\n編集機能を作りました"}, "commit"=>"保存", "id"=>"1"}
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:27
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:27
+Redirected to https://1a0fb3fce2404236b93c6c55ec9b33ad.vfs.cloud9.us-east-1.amazonaws.com/todolists/1
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/todolists/1" for 114.157.162.58 at 2020-12-10 10:27:25 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:20
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todolists/1/edit" for 114.157.162.58 at 2020-12-10 10:27:27 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:23
+  Rendering todolists/edit.html.erb within layouts/application
+  Rendered todolists/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/todolists/new" for 114.157.162.58 at 2020-12-10 10:28:01 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#new as HTML
+  Rendering todolists/new.html.erb within layouts/application
+  Rendered todolists/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/todolists" for 114.157.162.58 at 2020-12-10 10:28:17 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KfgfHsZ8fZvKKEArACBRpjULWEiD3mgAy3TcI0SbWgtPEdFuU3kJ20li1pttf7TY8NrIZy9Jswq7Xv3/T16qjA==", "list"=>{"title"=>"テスト", "body"=>"テスト", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f53e027f868 @tempfile=#<Tempfile:/tmp/RackMultipart20201210-5765-1l37y0c.png>, @original_filename="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"list[image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"投稿"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:10
+  [1m[36mList Create (1.4ms)[0m  [1m[32mINSERT INTO "lists" ("title", "body", "created_at", "updated_at", "image_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "テスト"], ["body", "テスト"], ["created_at", "2020-12-10 10:28:17.707098"], ["updated_at", "2020-12-10 10:28:17.707098"], ["image_id", "6ecd459306f9496c9273781e4acda6c502638aec7dd8ec3613a665daf643"]]
+  ↳ app/controllers/todolists_controller.rb:10
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:10
+Redirected to https://1a0fb3fce2404236b93c6c55ec9b33ad.vfs.cloud9.us-east-1.amazonaws.com/todolists/12
+Completed 302 Found in 15ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/todolists/12" for 114.157.162.58 at 2020-12-10 10:28:17 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mList Load (24.6ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:20
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 44ms (Views: 15.7ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/attachments/d7abcc97e00f10d3e03dce0eadeb70f0009d50ad/store/fill/300/300/6ecd459306f9496c9273781e4acda6c502638aec7dd8ec3613a665daf643/image.jpeg" for 114.157.162.58 at 2020-12-10 10:28:18 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-12-10 10:28:18 +0000] GET "/d7abcc97e00f10d3e03dce0eadeb70f0009d50ad/store/fill/300/300/6ecd459306f9496c9273781e4acda6c502638aec7dd8ec3613a665daf643/image.jpeg" 200 140.1ms
+
+Started DELETE "/todolists/12" for 114.157.162.58 at 2020-12-10 10:28:55 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3fGCc3o6+yoH5YmIAHKFIc3IsuXsFoX1FF4CdJyYzaG7GEwD7z+PaoSvHzhtLWBfCBkiykCBXv9kdCOol109Jg==", "id"=>"12"}
+  [1m[36mList Load (0.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:32
+  [1m[36mList Destroy (0.8ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/todolists_controller.rb:32
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:32
+Redirected to https://1a0fb3fce2404236b93c6c55ec9b33ad.vfs.cloud9.us-east-1.amazonaws.com/todolists
+Completed 302 Found in 13ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/todolists" for 114.157.162.58 at 2020-12-10 10:28:56 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:2
+  Rendered todolists/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/attachments/40bee6d5866fc6d81c5be25544fef404e3185e62/store/fill/100/100/60b6ba730993ec785e4985990f3358de0e405cb7573f9d9c874b3fa594f6/image.jpeg" for 114.157.162.58 at 2020-12-10 10:28:56 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/b7948af341adc85d7b01bf26b454ff8c9e774da7/store/fill/100/100/4552d089f89ef3b5c2b5cde96d27edbe850773f8c6d65e20597dfeb05371/image.jpeg" for 114.157.162.58 at 2020-12-10 10:28:56 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/3fad98a45243845dd6202236dd85fa72bac9df07/store/fill/100/100/8af70e166de076eca3e98ff46f52d69ddea1bed064d88ba479fe74ceb291/image.jpeg" for 114.157.162.58 at 2020-12-10 10:28:56 +0000
+Cannot render console from 114.157.162.58! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-12-10 10:28:56 +0000] GET "/40bee6d5866fc6d81c5be25544fef404e3185e62/store/fill/100/100/60b6ba730993ec785e4985990f3358de0e405cb7573f9d9c874b3fa594f6/image.jpeg" 200 128.5ms
+
+Refile::App: [2020-12-10 10:28:56 +0000] GET "/b7948af341adc85d7b01bf26b454ff8c9e774da7/store/fill/100/100/4552d089f89ef3b5c2b5cde96d27edbe850773f8c6d65e20597dfeb05371/image.jpeg" 200 128.9ms
+
+Refile::App: [2020-12-10 10:28:56 +0000] GET "/3fad98a45243845dd6202236dd85fa72bac9df07/store/fill/100/100/8af70e166de076eca3e98ff46f52d69ddea1bed064d88ba479fe74ceb291/image.jpeg" 200 121.8ms
+
